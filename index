@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Misst</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Ocean Misst</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#coleccion">Colección</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>Joyería fina inspirada en el mar</h2>
+  <p>Elegancia, lujo y profundidad en cada pieza.</p>
+  <button onclick="explorar()">Explorar</button>
+</section>
+
+<section id="coleccion" class="grid">
+  <div class="card">Anillo Coral</div>
+  <div class="card">Collar Perla</div>
+  <div class="card">Pulsera Marina</div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form onsubmit="return enviarFormulario()">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Correo" required>
+    <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Ocean Misst</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
