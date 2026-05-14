@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUREUM | Joyería Fina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset y Estilos Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+        }
+
+        /* Navegación */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37; /* Color Oro */
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Galería de Productos */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s, shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AUREUM</h1>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Anillos</a>
+            <a href="#">Collares</a>
+            <a href="#">Relojes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Elegancia Eterna</h1>
+            <p>Piezas únicas diseñadas para momentos inolvidables</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Colección Destacada</h2>
+        
+        <div class="grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" alt="Anillo de compromiso">
+                <h3>Anillo Diamante Solitario</h3>
+                <p class="price">$1,200.00</p>
+                <a href="#" class="btn">Ver Detalles</a>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Collar de oro">
+                <h3>Collar Esmeralda Real</h3>
+                <p class="price">$850.00</p>
+                <a href="#" class="btn">Ver Detalles</a>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Pendientes">
+                <h3>Pendientes Perla Australiana</h3>
+                <p class="price">$450.00</p>
+                <a href="#" class="btn">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-logo">AUREUM</span>
+        <p>&copy; 2026 Joyería Aureum - Todos los derechos reservados.</p>
+        <p style="font-size: 0.7rem; color: #777; margin-top: 10px;">Diseño Exclusivo | Lujo y Tradición</p>
+    </footer>
+
+</body>
+</html>
